@@ -1,0 +1,116 @@
+{
+  "model_version": "1.0.0+run_a_resnet50",
+  "architecture": "resnet50",
+  "num_classes": 2,
+  "class_names": [
+    "benign",
+    "malignant"
+  ],
+  "class_mapping": {
+    "benign": 0,
+    "malignant": 1
+  },
+  "input_size": 224,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "seed": 42,
+  "trained_at": "2026-09-09T06:41:51+00:00",
+  "training_seconds": 122.65,
+  "epochs_trained": 12,
+  "best_epoch": 7,
+  "best_val_metric": {
+    "n": 276,
+    "accuracy": 0.9166666666666666,
+    "precision": 0.905982905982906,
+    "recall_sensitivity": 0.8983050847457628,
+    "specificity": 0.930379746835443,
+    "npv": 0.9245283018867925,
+    "f1": 0.902127659574468,
+    "balanced_accuracy": 0.9143424157906028,
+    "malignant_recall": 0.8983050847457628,
+    "roc_auc": 0.9773117356790388,
+    "pr_auc": 0.9728847679637309,
+    "brier_score": 0.0661617907488367,
+    "ece_10bin": 0.05094298669310787,
+    "loss": 0.2543117321199841,
+    "selection_score": 0.9773117356790388
+  },
+  "test_metrics": {
+    "n": 270.0,
+    "accuracy": 0.9296296296296296,
+    "precision": 0.9008264462809917,
+    "recall_sensitivity": 0.9396551724137931,
+    "specificity": 0.922077922077922,
+    "npv": 0.9530201342281879,
+    "f1": 0.9198312236286921,
+    "balanced_accuracy": 0.9308665472458576,
+    "malignant_recall": 0.9396551724137931,
+    "roc_auc": 0.9828145991939096,
+    "pr_auc": 0.979674348832334,
+    "brier_score": 0.05703036237906834,
+    "ece_10bin": 0.04277397080722108
+  },
+  "dataset": {
+    "train": 1294,
+    "val": 276,
+    "train_class_counts": {
+      "benign": 728,
+      "malignant": 566
+    },
+    "manifest_dir": "data/manifests",
+    "test_metrics": {
+      "n": 270,
+      "accuracy": 0.9296296296296296,
+      "roc_auc": 0.9828145991939096,
+      "evaluated_at": "2026-09-09T15:07:37",
+      "model_file": "best_model.pt"
+    }
+  },
+  "hyperparameters": {
+    "epochs": 18,
+    "head_epochs": 3,
+    "batch_size": 32,
+    "lr_head": 0.001,
+    "lr_finetune": 0.0001,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "loss": "CrossEntropyLoss",
+    "class_weights": "auto",
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.85,
+        1.0
+      ],
+      "rotation_deg": 15.0,
+      "horizontal_flip": true,
+      "vertical_flip": false,
+      "color_jitter": 0.15
+    },
+    "amp": true,
+    "patience": 5,
+    "run_name": "run_a_resnet50"
+  },
+  "environment": {
+    "python": "3.10.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "device": "cuda",
+    "torch": "2.5.1+cu121",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "cuda": "12.1",
+    "gpu_memory_mb": 6144
+  },
+  "calibration": "NOT IMPLEMENTED",
+  "pretrained": "imagenet",
+  "notes": "test metrics measured once on the held-out internal test split; the test split was never used for model selection or tuning."
+}

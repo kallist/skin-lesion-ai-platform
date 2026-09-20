@@ -1,0 +1,28 @@
+{
+  "n": 797,
+  "tp": 260,
+  "tn": 366,
+  "fp": 34,
+  "fn": 137,
+  "accuracy": 0.7854454203262233,
+  "precision": 0.8843537414965986,
+  "recall_sensitivity": 0.654911838790932,
+  "specificity": 0.915,
+  "f1": 0.7525325615050651,
+  "balanced_accuracy": 0.784955919395466,
+  "roc_auc": 0.907852644836272,
+  "pr_auc": 0.8929252898408199,
+  "false_positives": 34,
+  "false_negatives": 137,
+  "checks": {
+    "probability range 0..1": "PASS",
+    "benign + malignant == 1": "PASS",
+    "prediction == argmax(probability)": "PASS",
+    "TP + TN + FP + FN == N": "PASS",
+    "accuracy == (TP + TN) / N": "PASS",
+    "metrics recomputation matches": "PASS",
+    "confusion matrix matches": "PASS"
+  },
+  "problems": [],
+  "verdict": "PASS"
+}

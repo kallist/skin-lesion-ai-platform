@@ -1,0 +1,87 @@
+# Skin Cancer Image Detection WebApp — 一键启动
+#
+#   docker compose up --build
+#
+# 前置条件：
+#   1) models/best_model.pt 存在（由 python -m ml.train 生成）
+#   2) .env 中已填写 SESSION_SECRET 与 IMAGE_ENCRYPTION_KEY
+#      生成方式：python scripts/generate_secrets.py >> .env
+#
+# 访问：http://localhost:8080
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: skin-cancer-backend:1.0.0
+    container_name: skin-backend
+    restart: unless-stopped
+    environment:
+      # ---------- app ----------
+      APP_ENV: ${APP_ENV:-production}
+      APP_VERSION: ${APP_VERSION:-1.0.0}
+      DEBUG: ${DEBUG:-false}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      # ---------- server ----------
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+      # ---------- database ----------
+      DATABASE_URL: ${DATABASE_URL:-sqlite:////app/backend/data/app.sqlite3}
+      # ---------- auth (secrets come from .env, never baked into the image) ----------
+      SESSION_SECRET: ${SESSION_SECRET:?SESSION_SECRET must be set - run scripts/generate_secrets.py}
+      SESSION_TTL_HOURS: ${SESSION_TTL_HOURS:-168}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      COOKIE_SAMESITE: ${COOKIE_SAMESITE:-lax}
+      # ---------- image privacy ----------
+      IMAGE_ENCRYPTION_KEY: ${IMAGE_ENCRYPTION_KEY:?IMAGE_ENCRYPTION_KEY must be set - run scripts/generate_secrets.py}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-10}
+      MAX_IMAGE_PIXELS: ${MAX_IMAGE_PIXELS:-40000000}
+      ENCRYPTED_IMAGE_DIR: /app/backend/data/encrypted_uploads
+      TEMP_DIR: /app/backend/data/tmp
+      # ---------- ml ----------
+      MODEL_PATH: /app/models/best_model.pt
+      MODEL_BACKEND: ${MODEL_BACKEND:-auto}
+      INFERENCE_CONCURRENCY: ${INFERENCE_CONCURRENCY:-2}
+      MODEL_WARMUP: ${MODEL_WARMUP:-true}
+      ORPHAN_SWEEP_ON_STARTUP: ${ORPHAN_SWEEP_ON_STARTUP:-true}
+    volumes:
+      # SQLite database + encrypted images must survive container restarts
+      - backend-data:/app/backend/data
+      # trained model is mounted read-only (training is NOT part of startup)
+      - ./models:/app/models:ro
+    networks:
+      - skin-net
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/api/v1/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: skin-cancer-frontend:1.0.0
+    container_name: skin-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    networks:
+      - skin-net
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  backend-data:
+    name: skin-cancer-backend-data
+
+networks:
+  skin-net:
+    driver: bridge

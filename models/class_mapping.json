@@ -1,0 +1,12 @@
+{
+  "class_to_idx": {
+    "benign": 0,
+    "malignant": 1
+  },
+  "idx_to_class": {
+    "0": "benign",
+    "1": "malignant"
+  },
+  "positive_class": "malignant",
+  "note": "Index order is fixed by the training pipeline; clients must not guess it."
+}

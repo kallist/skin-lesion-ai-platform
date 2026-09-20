@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-09-09T14:44:51",
+  "environment": {
+    "python": "3.10.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "device": "cuda",
+    "torch": "2.5.1+cu121",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "cuda": "12.1",
+    "gpu_memory_mb": 6144
+  },
+  "device": "cpu",
+  "baseline": {
+    "model_file": "best_model.pt",
+    "size_mb": 89.998,
+    "parameters": 23512130,
+    "load_seconds": 0.41,
+    "latency": {
+      "runs": 25,
+      "mean_ms": 77.484,
+      "median_ms": 77.086,
+      "p95_ms": 89.185,
+      "min_ms": 66.994,
+      "max_ms": 90.29,
+      "throughput_images_per_sec": 12.91
+    },
+    "metrics": {
+      "n": 270,
+      "accuracy": 0.9296296296296296,
+      "precision": 0.9008264462809917,
+      "recall_sensitivity": 0.9396551724137931,
+      "specificity": 0.922077922077922,
+      "npv": 0.9530201342281879,
+      "f1": 0.9198312236286921,
+      "balanced_accuracy": 0.9308665472458576,
+      "malignant_recall": 0.9396551724137931,
+      "confusion_matrix": {
+        "tp": 109,
+        "tn": 142,
+        "fp": 12,
+        "fn": 7
+      },
+      "confusion_matrix_matrix": [
+        [
+          142,
+          12
+        ],
+        [
+          7,
+          109
+        ]
+      ],
+      "positive_class": "malignant",
+      "roc_auc": 0.9828705776981639,
+      "pr_auc": 0.9797434952935861,
+      "brier_score": 0.05696748604010107,
+      "ece_10bin": 0.04237579020241186
+    }
+  },
+  "torchscript": {
+    "file": "best_model_torchscript.pt",
+    "size_mb": 90.213,
+    "max_probability_diff": 0.0,
+    "used_in_production": false
+  },
+  "dynamic_quantization": {
+    "file": "best_model_int8_dynamic.pt",
+    "size_mb": 89.985,
+    "latency": {
+      "runs": 25,
+      "mean_ms": 72.913,
+      "median_ms": 70.996,
+      "p95_ms": 79.492,
+      "min_ms": 67.455,
+      "max_ms": 82.794,
+      "throughput_images_per_sec": 13.72
+    },
+    "metrics": {
+      "n": 270,
+      "accuracy": 0.9296296296296296,
+      "precision": 0.9008264462809917,
+      "recall_sensitivity": 0.9396551724137931,
+      "specificity": 0.922077922077922,
+      "npv": 0.9530201342281879,
+      "f1": 0.9198312236286921,
+      "balanced_accuracy": 0.9308665472458576,
+      "malignant_recall": 0.9396551724137931,
+      "confusion_matrix": {
+        "tp": 109,
+        "tn": 142,
+        "fp": 12,
+        "fn": 7
+      },
+      "confusion_matrix_matrix": [
+        [
+          142,
+          12
+        ],
+        [
+          7,
+          109
+        ]
+      ],
+      "positive_class": "malignant",
+      "roc_auc": 0.9828145991939096,
+      "pr_auc": 0.9796896457672712,
+      "brier_score": 0.05686619414630281,
+      "ece_10bin": 0.04258891735035934
+    },
+    "accuracy_delta": 0.0,
+    "used_in_production": false
+  },
+  "notes": [
+    "Latency measured with a warm model on a single process; numbers depend on hardware.",
+    "The quantised model is experimental and is NOT used by the production API.",
+    "Production deployment keeps the FP32 checkpoint because it is the accuracy reference."
+  ]
+}

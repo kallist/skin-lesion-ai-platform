@@ -1,0 +1,519 @@
+{
+  "test_data_dir": "<external to this repository>",
+  "label_source": "directory structure (benign/ malignant/)",
+  "images_total": 797,
+  "by_extension": {
+    ".jpg": 797
+  },
+  "by_class": {
+    "benign": 400,
+    "malignant": 397
+  },
+  "directories": [
+    "benign",
+    "malignant"
+  ],
+  "label_files_found": [],
+  "corrupted_images": [],
+  "image_sizes": {
+    "224x224": 797
+  },
+  "image_modes": {
+    "RGB": 797
+  },
+  "duplicate_basenames": {
+    "1309.jpg": [
+      "benign\\1309.jpg",
+      "malignant\\1309.jpg"
+    ],
+    "1311.jpg": [
+      "benign\\1311.jpg",
+      "malignant\\1311.jpg"
+    ],
+    "1312.jpg": [
+      "benign\\1312.jpg",
+      "malignant\\1312.jpg"
+    ],
+    "1313.jpg": [
+      "benign\\1313.jpg",
+      "malignant\\1313.jpg"
+    ],
+    "1314.jpg": [
+      "benign\\1314.jpg",
+      "malignant\\1314.jpg"
+    ],
+    "1315.jpg": [
+      "benign\\1315.jpg",
+      "malignant\\1315.jpg"
+    ],
+    "1316.jpg": [
+      "benign\\1316.jpg",
+      "malignant\\1316.jpg"
+    ],
+    "1317.jpg": [
+      "benign\\1317.jpg",
+      "malignant\\1317.jpg"
+    ],
+    "1318.jpg": [
+      "benign\\1318.jpg",
+      "malignant\\1318.jpg"
+    ],
+    "1323.jpg": [
+      "benign\\1323.jpg",
+      "malignant\\1323.jpg"
+    ],
+    "1324.jpg": [
+      "benign\\1324.jpg",
+      "malignant\\1324.jpg"
+    ],
+    "1325.jpg": [
+      "benign\\1325.jpg",
+      "malignant\\1325.jpg"
+    ],
+    "1326.jpg": [
+      "benign\\1326.jpg",
+      "malignant\\1326.jpg"
+    ],
+    "1327.jpg": [
+      "benign\\1327.jpg",
+      "malignant\\1327.jpg"
+    ],
+    "1328.jpg": [
+      "benign\\1328.jpg",
+      "malignant\\1328.jpg"
+    ],
+    "1329.jpg": [
+      "benign\\1329.jpg",
+      "malignant\\1329.jpg"
+    ],
+    "1331.jpg": [
+      "benign\\1331.jpg",
+      "malignant\\1331.jpg"
+    ],
+    "1332.jpg": [
+      "benign\\1332.jpg",
+      "malignant\\1332.jpg"
+    ],
+    "1335.jpg": [
+      "benign\\1335.jpg",
+      "malignant\\1335.jpg"
+    ],
+    "1337.jpg": [
+      "benign\\1337.jpg",
+      "malignant\\1337.jpg"
+    ],
+    "1338.jpg": [
+      "benign\\1338.jpg",
+      "malignant\\1338.jpg"
+    ],
+    "1340.jpg": [
+      "benign\\1340.jpg",
+      "malignant\\1340.jpg"
+    ],
+    "1341.jpg": [
+      "benign\\1341.jpg",
+      "malignant\\1341.jpg"
+    ],
+    "1344.jpg": [
+      "benign\\1344.jpg",
+      "malignant\\1344.jpg"
+    ],
+    "1345.jpg": [
+      "benign\\1345.jpg",
+      "malignant\\1345.jpg"
+    ],
+    "1346.jpg": [
+      "benign\\1346.jpg",
+      "malignant\\1346.jpg"
+    ],
+    "1348.jpg": [
+      "benign\\1348.jpg",
+      "malignant\\1348.jpg"
+    ],
+    "1349.jpg": [
+      "benign\\1349.jpg",
+      "malignant\\1349.jpg"
+    ],
+    "1351.jpg": [
+      "benign\\1351.jpg",
+      "malignant\\1351.jpg"
+    ],
+    "1352.jpg": [
+      "benign\\1352.jpg",
+      "malignant\\1352.jpg"
+    ],
+    "1353.jpg": [
+      "benign\\1353.jpg",
+      "malignant\\1353.jpg"
+    ],
+    "1356.jpg": [
+      "benign\\1356.jpg",
+      "malignant\\1356.jpg"
+    ],
+    "1360.jpg": [
+      "benign\\1360.jpg",
+      "malignant\\1360.jpg"
+    ],
+    "1361.jpg": [
+      "benign\\1361.jpg",
+      "malignant\\1361.jpg"
+    ],
+    "1363.jpg": [
+      "benign\\1363.jpg",
+      "malignant\\1363.jpg"
+    ],
+    "1368.jpg": [
+      "benign\\1368.jpg",
+      "malignant\\1368.jpg"
+    ],
+    "1369.jpg": [
+      "benign\\1369.jpg",
+      "malignant\\1369.jpg"
+    ],
+    "1371.jpg": [
+      "benign\\1371.jpg",
+      "malignant\\1371.jpg"
+    ],
+    "1372.jpg": [
+      "benign\\1372.jpg",
+      "malignant\\1372.jpg"
+    ],
+    "1375.jpg": [
+      "benign\\1375.jpg",
+      "malignant\\1375.jpg"
+    ],
+    "1384.jpg": [
+      "benign\\1384.jpg",
+      "malignant\\1384.jpg"
+    ],
+    "1385.jpg": [
+      "benign\\1385.jpg",
+      "malignant\\1385.jpg"
+    ],
+    "1386.jpg": [
+      "benign\\1386.jpg",
+      "malignant\\1386.jpg"
+    ],
+    "1387.jpg": [
+      "benign\\1387.jpg",
+      "malignant\\1387.jpg"
+    ],
+    "1388.jpg": [
+      "benign\\1388.jpg",
+      "malignant\\1388.jpg"
+    ],
+    "1389.jpg": [
+      "benign\\1389.jpg",
+      "malignant\\1389.jpg"
+    ],
+    "1390.jpg": [
+      "benign\\1390.jpg",
+      "malignant\\1390.jpg"
+    ],
+    "1391.jpg": [
+      "benign\\1391.jpg",
+      "malignant\\1391.jpg"
+    ],
+    "1392.jpg": [
+      "benign\\1392.jpg",
+      "malignant\\1392.jpg"
+    ],
+    "1394.jpg": [
+      "benign\\1394.jpg",
+      "malignant\\1394.jpg"
+    ],
+    "1396.jpg": [
+      "benign\\1396.jpg",
+      "malignant\\1396.jpg"
+    ],
+    "1397.jpg": [
+      "benign\\1397.jpg",
+      "malignant\\1397.jpg"
+    ],
+    "1398.jpg": [
+      "benign\\1398.jpg",
+      "malignant\\1398.jpg"
+    ],
+    "1399.jpg": [
+      "benign\\1399.jpg",
+      "malignant\\1399.jpg"
+    ],
+    "1403.jpg": [
+      "benign\\1403.jpg",
+      "malignant\\1403.jpg"
+    ],
+    "1404.jpg": [
+      "benign\\1404.jpg",
+      "malignant\\1404.jpg"
+    ],
+    "1405.jpg": [
+      "benign\\1405.jpg",
+      "malignant\\1405.jpg"
+    ],
+    "1406.jpg": [
+      "benign\\1406.jpg",
+      "malignant\\1406.jpg"
+    ],
+    "1407.jpg": [
+      "benign\\1407.jpg",
+      "malignant\\1407.jpg"
+    ],
+    "1408.jpg": [
+      "benign\\1408.jpg",
+      "malignant\\1408.jpg"
+    ],
+    "1410.jpg": [
+      "benign\\1410.jpg",
+      "malignant\\1410.jpg"
+    ],
+    "1411.jpg": [
+      "benign\\1411.jpg",
+      "malignant\\1411.jpg"
+    ],
+    "1413.jpg": [
+      "benign\\1413.jpg",
+      "malignant\\1413.jpg"
+    ],
+    "1414.jpg": [
+      "benign\\1414.jpg",
+      "malignant\\1414.jpg"
+    ],
+    "1416.jpg": [
+      "benign\\1416.jpg",
+      "malignant\\1416.jpg"
+    ],
+    "1418.jpg": [
+      "benign\\1418.jpg",
+      "malignant\\1418.jpg"
+    ],
+    "1419.jpg": [
+      "benign\\1419.jpg",
+      "malignant\\1419.jpg"
+    ],
+    "1420.jpg": [
+      "benign\\1420.jpg",
+      "malignant\\1420.jpg"
+    ],
+    "1421.jpg": [
+      "benign\\1421.jpg",
+      "malignant\\1421.jpg"
+    ],
+    "1423.jpg": [
+      "benign\\1423.jpg",
+      "malignant\\1423.jpg"
+    ],
+    "1424.jpg": [
+      "benign\\1424.jpg",
+      "malignant\\1424.jpg"
+    ],
+    "1426.jpg": [
+      "benign\\1426.jpg",
+      "malignant\\1426.jpg"
+    ],
+    "1428.jpg": [
+      "benign\\1428.jpg",
+      "malignant\\1428.jpg"
+    ],
+    "1429.jpg": [
+      "benign\\1429.jpg",
+      "malignant\\1429.jpg"
+    ],
+    "1431.jpg": [
+      "benign\\1431.jpg",
+      "malignant\\1431.jpg"
+    ],
+    "1432.jpg": [
+      "benign\\1432.jpg",
+      "malignant\\1432.jpg"
+    ],
+    "1433.jpg": [
+      "benign\\1433.jpg",
+      "malignant\\1433.jpg"
+    ],
+    "1434.jpg": [
+      "benign\\1434.jpg",
+      "malignant\\1434.jpg"
+    ],
+    "1435.jpg": [
+      "benign\\1435.jpg",
+      "malignant\\1435.jpg"
+    ],
+    "1437.jpg": [
+      "benign\\1437.jpg",
+      "malignant\\1437.jpg"
+    ],
+    "1439.jpg": [
+      "benign\\1439.jpg",
+      "malignant\\1439.jpg"
+    ],
+    "1440.jpg": [
+      "benign\\1440.jpg",
+      "malignant\\1440.jpg"
+    ],
+    "1442.jpg": [
+      "benign\\1442.jpg",
+      "malignant\\1442.jpg"
+    ],
+    "1444.jpg": [
+      "benign\\1444.jpg",
+      "malignant\\1444.jpg"
+    ],
+    "1446.jpg": [
+      "benign\\1446.jpg",
+      "malignant\\1446.jpg"
+    ],
+    "1449.jpg": [
+      "benign\\1449.jpg",
+      "malignant\\1449.jpg"
+    ],
+    "1450.jpg": [
+      "benign\\1450.jpg",
+      "malignant\\1450.jpg"
+    ],
+    "1452.jpg": [
+      "benign\\1452.jpg",
+      "malignant\\1452.jpg"
+    ],
+    "1453.jpg": [
+      "benign\\1453.jpg",
+      "malignant\\1453.jpg"
+    ],
+    "1454.jpg": [
+      "benign\\1454.jpg",
+      "malignant\\1454.jpg"
+    ],
+    "1455.jpg": [
+      "benign\\1455.jpg",
+      "malignant\\1455.jpg"
+    ],
+    "1456.jpg": [
+      "benign\\1456.jpg",
+      "malignant\\1456.jpg"
+    ],
+    "1457.jpg": [
+      "benign\\1457.jpg",
+      "malignant\\1457.jpg"
+    ],
+    "1458.jpg": [
+      "benign\\1458.jpg",
+      "malignant\\1458.jpg"
+    ],
+    "1459.jpg": [
+      "benign\\1459.jpg",
+      "malignant\\1459.jpg"
+    ],
+    "1460.jpg": [
+      "benign\\1460.jpg",
+      "malignant\\1460.jpg"
+    ],
+    "1462.jpg": [
+      "benign\\1462.jpg",
+      "malignant\\1462.jpg"
+    ],
+    "1463.jpg": [
+      "benign\\1463.jpg",
+      "malignant\\1463.jpg"
+    ],
+    "1465.jpg": [
+      "benign\\1465.jpg",
+      "malignant\\1465.jpg"
+    ],
+    "1467.jpg": [
+      "benign\\1467.jpg",
+      "malignant\\1467.jpg"
+    ],
+    "1469.jpg": [
+      "benign\\1469.jpg",
+      "malignant\\1469.jpg"
+    ],
+    "1470.jpg": [
+      "benign\\1470.jpg",
+      "malignant\\1470.jpg"
+    ],
+    "1472.jpg": [
+      "benign\\1472.jpg",
+      "malignant\\1472.jpg"
+    ],
+    "1474.jpg": [
+      "benign\\1474.jpg",
+      "malignant\\1474.jpg"
+    ],
+    "1475.jpg": [
+      "benign\\1475.jpg",
+      "malignant\\1475.jpg"
+    ],
+    "1476.jpg": [
+      "benign\\1476.jpg",
+      "malignant\\1476.jpg"
+    ],
+    "1477.jpg": [
+      "benign\\1477.jpg",
+      "malignant\\1477.jpg"
+    ],
+    "1478.jpg": [
+      "benign\\1478.jpg",
+      "malignant\\1478.jpg"
+    ],
+    "1480.jpg": [
+      "benign\\1480.jpg",
+      "malignant\\1480.jpg"
+    ],
+    "1482.jpg": [
+      "benign\\1482.jpg",
+      "malignant\\1482.jpg"
+    ],
+    "1486.jpg": [
+      "benign\\1486.jpg",
+      "malignant\\1486.jpg"
+    ],
+    "1487.jpg": [
+      "benign\\1487.jpg",
+      "malignant\\1487.jpg"
+    ],
+    "1490.jpg": [
+      "benign\\1490.jpg",
+      "malignant\\1490.jpg"
+    ],
+    "1491.jpg": [
+      "benign\\1491.jpg",
+      "malignant\\1491.jpg"
+    ],
+    "1493.jpg": [
+      "benign\\1493.jpg",
+      "malignant\\1493.jpg"
+    ],
+    "1494.jpg": [
+      "benign\\1494.jpg",
+      "malignant\\1494.jpg"
+    ],
+    "1496.jpg": [
+      "benign\\1496.jpg",
+      "malignant\\1496.jpg"
+    ],
+    "1497.jpg": [
+      "benign\\1497.jpg",
+      "malignant\\1497.jpg"
+    ],
+    "1498.jpg": [
+      "benign\\1498.jpg",
+      "malignant\\1498.jpg"
+    ],
+    "1500.jpg": [
+      "benign\\1500.jpg",
+      "malignant\\1500.jpg"
+    ]
+  },
+  "overlap_with_internal": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "overlap_examples": {
+    "train": [],
+    "val": [],
+    "test": []
+  },
+  "staging_dir": "<external to this repository>",
+  "labels_csv": "<external to this repository>",
+  "staged_images": 797
+}

@@ -1,0 +1,56 @@
+{
+  "capturedAt": "2026-09-20T06:29:10.731Z",
+  "baseUrl": "http://localhost:4173",
+  "viewport": "1440x900 @1.5x",
+  "imageSource": "synthetic demo images (scripts/make_demo_images.py)",
+  "uploadedImages": [
+    "demo_lesion_a.jpg",
+    "demo_lesion_b.jpg",
+    "demo_lesion_c.jpg"
+  ],
+  "demoAccount": {
+    "usernamePattern": "demo<timestamp>",
+    "fullName": "演示账号"
+  },
+  "screenshots": [
+    "01_home.png",
+    "00_home_hero.png",
+    "02_login.png",
+    "03_register.png",
+    "04_detect_empty.png",
+    "05_detect_preview.png",
+    "06_detect_result.png",
+    "07_history.png",
+    "08_history_detail.png",
+    "09_compare.png",
+    "10_profile.png",
+    "11_about.png",
+    "12_evaluation.png"
+  ],
+  "detections": [
+    {
+      "sourceImage": "demo_lesion_a.jpg",
+      "datasetLabel": "synthetic-demo",
+      "resultCardText": "检测结果✓良性倾向(Benign)模型置信度73.2%良性倾向 (benign)73.2%恶性倾向 (malignant)26.8%健康建议模型检测结果倾向于良性，但 AI 检测不能完全排除风险。如皮损持续变化、出现不适或你仍有疑虑，建议咨询皮肤科医生。模型版本1.0.0+run_a_resnet50检测时间2026/09/20 06:28记录编号#25本系统仅作为皮肤健康辅助自检工具，检测结果仅供参考，不能替代专业医生诊断。 模型置信度并不等同于真实临床患病概率。",
+      "confidence": "73.2%",
+      "modelVersion": "1.0.0+run_a_resnet50",
+      "advice": "模型检测结果倾向于良性，但 AI 检测不能完全排除风险。如皮损持续变化、出现不适或你仍有疑虑，建议咨询皮肤科医生。"
+    },
+    {
+      "sourceImage": "demo_lesion_b.jpg",
+      "datasetLabel": "synthetic-demo",
+      "resultCardText": "检测结果✓良性倾向(Benign)模型置信度72.0%良性倾向 (benign)72.0%恶性倾向 (malignant)28.0%健康建议模型检测结果倾向于良性，但 AI 检测不能完全排除风险。如皮损持续变化、出现不适或你仍有疑虑，建议咨询皮肤科医生。模型版本1.0.0+run_a_resnet50检测时间2026/09/20 06:28记录编号#26本系统仅作为皮肤健康辅助自检工具，检测结果仅供参考，不能替代专业医生诊断。 模型置信度并不等同于真实临床患病概率。",
+      "confidence": "72.0%",
+      "modelVersion": "1.0.0+run_a_resnet50",
+      "advice": "模型检测结果倾向于良性，但 AI 检测不能完全排除风险。如皮损持续变化、出现不适或你仍有疑虑，建议咨询皮肤科医生。"
+    },
+    {
+      "sourceImage": "demo_lesion_c.jpg",
+      "datasetLabel": "synthetic-demo",
+      "resultCardText": "检测结果✓良性倾向(Benign)模型置信度78.0%良性倾向 (benign)78.0%恶性倾向 (malignant)22.0%健康建议模型检测结果倾向于良性，但 AI 检测不能完全排除风险。如皮损持续变化、出现不适或你仍有疑虑，建议咨询皮肤科医生。模型版本1.0.0+run_a_resnet50检测时间2026/09/20 06:29记录编号#27本系统仅作为皮肤健康辅助自检工具，检测结果仅供参考，不能替代专业医生诊断。 模型置信度并不等同于真实临床患病概率。",
+      "confidence": "78.0%",
+      "modelVersion": "1.0.0+run_a_resnet50",
+      "advice": "模型检测结果倾向于良性，但 AI 检测不能完全排除风险。如皮损持续变化、出现不适或你仍有疑虑，建议咨询皮肤科医生。"
+    }
+  ]
+}

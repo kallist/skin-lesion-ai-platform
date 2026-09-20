@@ -1,0 +1,14 @@
+{
+  "checked": 12,
+  "correct": 11,
+  "sample_accuracy": 0.9167,
+  "failures": [],
+  "model_version": "1.0.0+run_a_resnet50",
+  "architecture": "resnet50",
+  "api_latency_ms": {
+    "min": 44.79580000042915,
+    "median": 47.145499964244664,
+    "max": 54.00900001404807
+  },
+  "verdict": "PASS"
+}

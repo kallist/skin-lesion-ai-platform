@@ -1,0 +1,49 @@
+{
+  "seed": 42,
+  "val_fraction": 0.15,
+  "test_fraction": 0.15,
+  "counts": {
+    "train": 1294,
+    "val": 276,
+    "test": 270
+  },
+  "per_class": {
+    "train": {
+      "benign": 728,
+      "malignant": 566
+    },
+    "val": {
+      "benign": 158,
+      "malignant": 118
+    },
+    "test": {
+      "benign": 154,
+      "malignant": 116
+    }
+  },
+  "groups": {
+    "train": 1255,
+    "val": 269,
+    "test": 269
+  },
+  "dropped_ambiguous_groups": [],
+  "integrity": {
+    "checks": {
+      "train_vs_val_by_sha256": 0,
+      "train_vs_test_by_sha256": 0,
+      "val_vs_test_by_sha256": 0,
+      "train_vs_val_by_group": 0,
+      "train_vs_test_by_group": 0,
+      "val_vs_test_by_group": 0,
+      "train_vs_val_by_label_filename": 0,
+      "train_vs_test_by_label_filename": 0,
+      "val_vs_test_by_label_filename": 0,
+      "total_rows": 1840,
+      "unique_sha256": 1839,
+      "distinct_content_every_row": false,
+      "note": "total_rows may legitimately exceed unique_sha256 when the raw dataset contains byte-identical images; those are grouped into one split."
+    },
+    "passed": true
+  },
+  "split_strategy": "group-aware stratified image-level split (no patient_id in dataset); exact-SHA and aHash<=2 near-duplicate clusters are never split across sets"
+}

@@ -1,0 +1,50 @@
+{
+  "n": 270,
+  "accuracy": 0.9296296296296296,
+  "precision": 0.9008264462809917,
+  "recall_sensitivity": 0.9396551724137931,
+  "specificity": 0.922077922077922,
+  "npv": 0.9530201342281879,
+  "f1": 0.9198312236286921,
+  "balanced_accuracy": 0.9308665472458576,
+  "malignant_recall": 0.9396551724137931,
+  "confusion_matrix": {
+    "tp": 109,
+    "tn": 142,
+    "fp": 12,
+    "fn": 7
+  },
+  "confusion_matrix_matrix": [
+    [
+      142,
+      12
+    ],
+    [
+      7,
+      109
+    ]
+  ],
+  "positive_class": "malignant",
+  "roc_auc": 0.9828145991939096,
+  "pr_auc": 0.979674348832334,
+  "brier_score": 0.05703036237906834,
+  "ece_10bin": 0.04277397080722108,
+  "split": "test",
+  "model_version": "1.0.0+run_a_resnet50",
+  "architecture": "resnet50",
+  "model_file": "best_model.pt",
+  "device": "cuda",
+  "environment": {
+    "python": "3.10.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "device": "cuda",
+    "torch": "2.5.1+cu121",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "cuda": "12.1",
+    "gpu_memory_mb": 6144
+  },
+  "class_names": [
+    "benign",
+    "malignant"
+  ]
+}

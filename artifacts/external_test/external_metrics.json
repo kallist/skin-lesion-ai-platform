@@ -1,0 +1,38 @@
+{
+  "n": 797,
+  "accuracy": 0.7854454203262233,
+  "precision": 0.8843537414965986,
+  "recall_sensitivity": 0.654911838790932,
+  "specificity": 0.915,
+  "npv": 0.7276341948310139,
+  "f1": 0.7525325615050651,
+  "balanced_accuracy": 0.784955919395466,
+  "malignant_recall": 0.654911838790932,
+  "confusion_matrix": {
+    "tp": 260,
+    "tn": 366,
+    "fp": 34,
+    "fn": 137
+  },
+  "confusion_matrix_matrix": [
+    [
+      366,
+      34
+    ],
+    [
+      137,
+      260
+    ]
+  ],
+  "positive_class": "malignant",
+  "roc_auc": 0.907852644836272,
+  "pr_auc": 0.8929252898408199,
+  "brier_score": 0.16700510021679799,
+  "ece_10bin": 0.15052695357590967,
+  "source": "external_test",
+  "model_version": "1.0.0+run_a_resnet50",
+  "architecture": "resnet50",
+  "n_images": 797,
+  "n_labelled": 797,
+  "unmatched": 0
+}
